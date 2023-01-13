@@ -5094,6 +5094,58 @@ public class utils extends script.base_script
                 return "ithorian";
             case SPECIES_SULLUSTAN:
                 return "sullustan";
+            case SPECIES_ABYSSIN:
+                return "abyssin";
+            case SPECIES_ARCONA:
+                return "arcona";
+            case SPECIES_AQUALISH:
+                return "aqualish";
+            case SPECIES_BITH:
+                return "bith";
+            case SPECIES_CHISS:
+                return "chiss";
+            case SPECIES_DEVARONIAN:
+                return "devaronian";
+            case SPECIES_DUROS:
+                return "duros";
+            case SPECIES_GOTAL:
+                return "gotal";
+            case SPECIES_GRAN:
+                return "gran";
+            case SPECIES_HUTT:
+                return "hutt";
+            case SPECIES_IKTOTCHI:
+                return "iktotchi";
+            case SPECIES_ISHI_TIB:
+                return "ishi_tib";
+            case SPECIES_JENET:
+                return "jenet";
+            case SPECIES_KADASSA:
+                return "kadassa";
+            case SPECIES_KEL_DOR:
+                return "kel_dor";
+            case SPECIES_KLATOOINIAN:
+                return "klatooinian";
+            case SPECIES_KUBAZ:
+                return "kubaz";
+            case SPECIES_MARAUDER:
+                return "marauder";
+            case SPECIES_NAUTOLAN:
+                return "nautolan";
+            case SPECIES_NIKTO:
+                return "nikto";
+            case SPECIES_NIGHTSISTER:
+                return "nightsister";
+            case SPECIES_QUARREN:
+                return "quarren";
+            case SPECIES_SMC:
+                return "smc";
+            case SPECIES_TALZ:
+                return "talz";
+            case SPECIES_TOGRUTA:
+                return "togruta";
+            case SPECIES_WEEQUAY:
+                return "weequay";
             default:
                 return "unknown";
         }
@@ -5502,18 +5554,68 @@ public class utils extends script.base_script
             return false;
         }
         String hair_table = "datatables/customization/hair_assets_skill_mods.iff";
-        int idx = dataTableSearchColumnForString(getTemplateName(hair), "SERVER_TEMPLATE", hair_table);
-        if (idx < 0)
+
+        //get number of rows and loop through datatable for identical rows (for use when multiple species have the same hair styles)
+        //SOE never considered that hair styles may be reused
+        int num_hair_rows = dataTableGetNumRows(hair_table);
+
+        //used when troubleshooting
+        //sendSystemMessageTestingOnly(player, "Number of Rows (Hair): " + num_hair_rows);
+        
+        //build a list of indices used for matching hair to species in datatable rows
+        List<Integer> idxList = new ArrayList<Integer>();
+        for (int i = 0; i < num_hair_rows; i++)
+        {
+            String hair_template = null;
+            String temp_template = null;
+            temp_template = dataTableGetString(hair_table, i, "SERVER_TEMPLATE");
+            hair_template = getTemplateName(hair);
+
+            //messages used for troubleshooting
+            //sendSystemMessageTestingOnly(player, "Temp Template: " + temp_template);
+            //sendSystemMessageTestingOnly(player, "Hair Template: " + hair_template);
+            if (temp_template.matches(hair_template))
+            {
+                idxList.add(i);
+                sendSystemMessageTestingOnly(player, "matching template: " + temp_template);
+            }
+
+        }
+
+        //used when trouble shooting
+        //sendSystemMessageTestingOnly(player, "idxList: " + idxList);
+
+        //commenting out old way of only grabbing a single species match per hair style
+        //int idx = dataTableSearchColumnForString(getTemplateName(hair), "SERVER_TEMPLATE", hair_table);
+        //if (idx < 0)
+        if (idxList.size() < 0)
+        {
+            sendSystemMessageTestingOnly(player, "idxList Empty");
+            return false;
+        }
+
+        //commenting out old way of only grabbing a single species match per hair style
+        //String required_template = dataTableGetString(hair_table, idx, "SERVER_PLAYER_TEMPLATE");
+
+        List<String> required_templates = new ArrayList<String>();
+        for (int i = 0; i < idxList.size(); i++)
+        {
+            required_templates.add(dataTableGetString(hair_table, idxList.get(i), "SERVER_PLAYER_TEMPLATE"));
+        }
+
+        //if (required_template == null)
+        if (required_templates.size() < 0)
         {
             return false;
         }
-        String required_template = dataTableGetString(hair_table, idx, "SERVER_PLAYER_TEMPLATE");
-        if (required_template == null)
-        {
-            return false;
-        }
+
         String player_template = getTemplateName(player);
-        if (!player_template.equals(required_template))
+        
+        //used when trouble shooting
+        sendSystemMessageTestingOnly(player, "player template: " + player_template);
+        
+        //if (!player_template.equals(required_template))
+        if (!required_templates.contains(player_template))
         {
             String new_hair_template = dataTableGetString(hair_table, dataTableSearchColumnForString(player_template, "SERVER_PLAYER_TEMPLATE", hair_table), "SERVER_TEMPLATE");
             if (new_hair_template == null)

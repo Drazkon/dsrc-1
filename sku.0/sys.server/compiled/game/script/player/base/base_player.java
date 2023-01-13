@@ -8748,21 +8748,25 @@ public class base_player extends script.base_script
         int idx = -1;
         if (gender == GENDER_MALE)
         {
-            if (species == SPECIES_HUMAN || species == SPECIES_ZABRAK || species == SPECIES_BOTHAN || species == SPECIES_MON_CALAMARI || species == SPECIES_RODIAN || species == SPECIES_TWILEK)
+            /*if (species == SPECIES_HUMAN || species == SPECIES_ZABRAK || species == SPECIES_BOTHAN || species == SPECIES_MON_CALAMARI || species == SPECIES_RODIAN || species == SPECIES_TWILEK || species == SPECIES_ABYSSIN || species == SPECIES_AQUALISH || species == SPECIES_ARCONA || species == SPECIES_BITH || species == SPECIES_CEREAN || species == SPECIES_CHISS || species == SPECIES_DEVARONIAN || species == SPECIES_DUROS || species == SPECIES_GORAX || species == SPECIES_GOTAL || species == SPECIES_GRAN || species == SPECIES_HUTT || species == SPECIES_IKTOTCHI || species == SPECIES_ISHI_TIB || species == SPECIES_JENET || species == SPECIES_KADASSA || species == SPECIES_KEL_DOR || species == SPECIES_KLATOOINIAN || species == SPECIES_KUBAZ || species == SPECIES_MARAUDER || species == SPECIES_NAUTOLAN || species == SPECIES_NIKTO || species == SPECIES_QUARREN  || species == SPECIES_TALZ || species == SPECIES_WEEQUAY)
             {
                 idx = 0;
-            }
+            }*/
             if (species == SPECIES_TRANDOSHAN)
             {
                 idx = 3;
             }
+            else
+            {
+                idx = 0;
+            }
         }
         else 
         {
-            if (species == SPECIES_HUMAN || species == SPECIES_ZABRAK || species == SPECIES_BOTHAN || species == SPECIES_RODIAN || species == SPECIES_TWILEK)
+            /*if (species == SPECIES_HUMAN || species == SPECIES_ZABRAK || species == SPECIES_BOTHAN || species == SPECIES_RODIAN || species == SPECIES_TWILEK || species == SPECIES_AQUALISH || species == SPECIES_BITH || species == SPECIES_CHISS || species == SPECIES_HUTT || species == SPECIES_MARAUDER || species == SPECIES_NIGHTSISTER || species == SPECIES_SMC || species == SPECIES_TOGRUTA)
             {
                 idx = 1;
-            }
+            }*/
             if (species == SPECIES_MON_CALAMARI)
             {
                 idx = 2;
@@ -8770,6 +8774,10 @@ public class base_player extends script.base_script
             if (species == SPECIES_TRANDOSHAN)
             {
                 idx = 4;
+            }
+            else
+            {
+               idx = 1; 
             }
         }
         if (idx >= 0)

@@ -1,6 +1,6 @@
-pattern	bothan	human	moncal	rodian	trandoshan	twilek	wookiee	zabrak	ithorian	sullustan
-s	I	I	I	I	I	I	I	I	I	I
-nc	0	10	0	0	0	0	0	0	0	0
-gn	0	10	0	0	0	0	0	0	0	0
-gc	0	10	0	0	0	0	0	0	0	0
-jn	0	10	0	0	0	0	0	0	0	0
+pattern	bothan	human	moncal	rodian	trandoshan	twilek	wookiee	zabrak	ithorian	sullustan	abyssin	aqualish	arcona	bith	cerean	chiss	devaronian	duros	gotal	gran	hutt	iktotchi	ishiTib	ishi_tib	jenet	kadassa	kel_dor	klatooinian	kubaz	marauder	nautolan	nightsister	nikto	quarren	smc	talz	togruta	weequay
+s	I	I	I	I	I	I	I	I	I	I	I	I	I	I	I	I	I	I	I	I	I	I	I	I	I	I	I	I	I	I	I	I	I	I	I	I	I	I
+nc	0	10	0	0	0	0	0	0	0	0	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10
+gn	0	10	0	0	0	0	0	0	0	0	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10
+gc	0	10	0	0	0	0	0	0	0	0	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10
+jn	0	10	0	0	0	0	0	0	0	0	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10	10

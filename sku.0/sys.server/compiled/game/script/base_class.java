@@ -1170,6 +1170,20 @@ public class base_class
     public static final int SPECIES_ATAT                               = 227;
     public static final int SPECIES_GEONOSIAN                          = 228;
     public static final int SPECIES_VERACTYLE                          = 229;
+    //add additional species
+    public static final int SPECIES_CHISS                              = 230;
+    public static final int SPECIES_NAUTOLAN                           = 231;
+    public static final int SPECIES_NIGHTSISTER                        = 232;
+    public static final int SPECIES_SMC                                = 233;
+    public static final int SPECIES_TOGRUTA                            = 234;
+    public static final int SPECIES_CEREAN                             = 235;
+    public static final int SPECIES_KEL_DOR                            = 236;
+    public static final int SPECIES_JENET                              = 237;
+    public static final int SPECIES_KADASSA                            = 238;
+    public static final int SPECIES_NEIMOIDIAN                         = 239;
+    public static final int SPECIES_UGNAUGHT                           = 240;
+    public static final int SPECIES_IKTOTCHI                           = 241;
+    //end additional species
 
     /**
      * @}

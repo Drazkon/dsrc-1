@@ -119,6 +119,141 @@ public class species_innate extends script.base_script
             grantSkill(self, "social_language_sullustan_comprehend");
             grantSkill(self, "social_language_wookiee_comprehend");
             break;
+            case SPECIES_ABYSSIN:
+            grantSkill(self, "social_language_basic_speak");
+            grantSkill(self, "social_language_basic_comprehend");
+            grantSkill(self, "social_language_wookiee_comprehend");
+            break;
+            case SPECIES_AQUALISH:
+            grantSkill(self, "social_language_basic_speak");
+            grantSkill(self, "social_language_basic_comprehend");
+            grantSkill(self, "social_language_wookiee_comprehend");
+            break;
+            case SPECIES_ARCONA:
+            grantSkill(self, "social_language_basic_speak");
+            grantSkill(self, "social_language_basic_comprehend");
+            grantSkill(self, "social_language_wookiee_comprehend");
+            break;
+            case SPECIES_BITH:
+            grantSkill(self, "social_language_basic_speak");
+            grantSkill(self, "social_language_basic_comprehend");
+            grantSkill(self, "social_language_wookiee_comprehend");
+            break;
+            case SPECIES_CEREAN:
+            grantSkill(self, "social_language_basic_speak");
+            grantSkill(self, "social_language_basic_comprehend");
+            grantSkill(self, "social_language_wookiee_comprehend");
+            break;
+            case SPECIES_CHISS:
+            grantSkill(self, "social_language_basic_speak");
+            grantSkill(self, "social_language_basic_comprehend");
+            grantSkill(self, "social_language_wookiee_comprehend");
+            break;
+            case SPECIES_DEVARONIAN:
+            grantSkill(self, "social_language_basic_speak");
+            grantSkill(self, "social_language_basic_comprehend");
+            grantSkill(self, "social_language_wookiee_comprehend");
+            break;
+            case SPECIES_DUROS:
+            grantSkill(self, "social_language_basic_speak");
+            grantSkill(self, "social_language_basic_comprehend");
+            grantSkill(self, "social_language_wookiee_comprehend");
+            break;
+            case SPECIES_GOTAL:
+            grantSkill(self, "social_language_basic_speak");
+            grantSkill(self, "social_language_basic_comprehend");
+            grantSkill(self, "social_language_wookiee_comprehend");
+            break;
+            case SPECIES_GRAN:
+            grantSkill(self, "social_language_basic_speak");
+            grantSkill(self, "social_language_basic_comprehend");
+            grantSkill(self, "social_language_wookiee_comprehend");
+            break;
+            case SPECIES_HUTT:
+            grantSkill(self, "social_language_basic_speak");
+            grantSkill(self, "social_language_basic_comprehend");
+            grantSkill(self, "social_language_wookiee_comprehend");
+            break;
+            case SPECIES_IKTOTCHI:
+            grantSkill(self, "social_language_basic_speak");
+            grantSkill(self, "social_language_basic_comprehend");
+            grantSkill(self, "social_language_wookiee_comprehend");
+            break;
+            case SPECIES_ISHI_TIB:
+            grantSkill(self, "social_language_basic_speak");
+            grantSkill(self, "social_language_basic_comprehend");
+            grantSkill(self, "social_language_wookiee_comprehend");
+            break;
+            case SPECIES_JENET:
+            grantSkill(self, "social_language_basic_speak");
+            grantSkill(self, "social_language_basic_comprehend");
+            grantSkill(self, "social_language_wookiee_comprehend");
+            break;
+            case SPECIES_KADASSA:
+            grantSkill(self, "social_language_basic_speak");
+            grantSkill(self, "social_language_basic_comprehend");
+            grantSkill(self, "social_language_wookiee_comprehend");
+            break;
+            case SPECIES_KEL_DOR:
+            grantSkill(self, "social_language_basic_speak");
+            grantSkill(self, "social_language_basic_comprehend");
+            grantSkill(self, "social_language_wookiee_comprehend");
+            break;
+            case SPECIES_KLATOOINIAN:
+            grantSkill(self, "social_language_basic_speak");
+            grantSkill(self, "social_language_basic_comprehend");
+            grantSkill(self, "social_language_wookiee_comprehend");
+            break;
+            case SPECIES_KUBAZ:
+            grantSkill(self, "social_language_basic_speak");
+            grantSkill(self, "social_language_basic_comprehend");
+            grantSkill(self, "social_language_wookiee_comprehend");
+            break;
+            case SPECIES_MARAUDER:
+            grantSkill(self, "social_language_basic_speak");
+            grantSkill(self, "social_language_basic_comprehend");
+            grantSkill(self, "social_language_wookiee_comprehend");
+            break;
+            case SPECIES_NAUTOLAN:
+            grantSkill(self, "social_language_basic_speak");
+            grantSkill(self, "social_language_basic_comprehend");
+            grantSkill(self, "social_language_wookiee_comprehend");
+            break;
+            case SPECIES_NIKTO:
+            grantSkill(self, "social_language_basic_speak");
+            grantSkill(self, "social_language_basic_comprehend");
+            grantSkill(self, "social_language_wookiee_comprehend");
+            break;
+            case SPECIES_NIGHTSISTER:
+            grantSkill(self, "social_language_basic_speak");
+            grantSkill(self, "social_language_basic_comprehend");
+            grantSkill(self, "social_language_wookiee_comprehend");
+            break;
+            case SPECIES_QUARREN:
+            grantSkill(self, "social_language_basic_speak");
+            grantSkill(self, "social_language_basic_comprehend");
+            grantSkill(self, "social_language_wookiee_comprehend");
+            break;
+            case SPECIES_SMC:
+            grantSkill(self, "social_language_basic_speak");
+            grantSkill(self, "social_language_basic_comprehend");
+            grantSkill(self, "social_language_wookiee_comprehend");
+            break;
+            case SPECIES_TALZ:
+            grantSkill(self, "social_language_basic_speak");
+            grantSkill(self, "social_language_basic_comprehend");
+            grantSkill(self, "social_language_wookiee_comprehend");
+            break;
+            case SPECIES_TOGRUTA:
+            grantSkill(self, "social_language_basic_speak");
+            grantSkill(self, "social_language_basic_comprehend");
+            grantSkill(self, "social_language_wookiee_comprehend");
+            break;
+            case SPECIES_WEEQUAY:
+            grantSkill(self, "social_language_basic_speak");
+            grantSkill(self, "social_language_basic_comprehend");
+            grantSkill(self, "social_language_wookiee_comprehend");
+            break;
             default:
             detachScript(self, SCRIPT_ME);
             break;

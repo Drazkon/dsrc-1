@@ -199,6 +199,297 @@ form "PRFI"
 			EQ(0, "object/tangible/wearables/bracelet/shared_bracelet_s06_r.iff", "")
 			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s07.iff", "")
 		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(abyssin_male)
+			EQ(0, "object/tangible/wearables/shirt/shared_shirt_s03.iff", "")
+			EQ(0, "object/tangible/wearables/vest/shared_vest_s09.iff", "")
+			EQ(0, "object/tangible/wearables/necklace/shared_necklace_primitive_03.iff", "")
+			EQ(0, "object/tangible/wearables/pants/shared_pants_s13.iff", "")
+			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s01.iff", "")
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(aqualish_male)
+			EQ(0, "object/tangible/wearables/shirt/shared_shirt_s03.iff", "")
+			EQ(0, "object/tangible/wearables/vest/shared_vest_s09.iff", "")
+			EQ(0, "object/tangible/wearables/necklace/shared_necklace_primitive_03.iff", "")
+			EQ(0, "object/tangible/wearables/pants/shared_pants_s13.iff", "")
+			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s01.iff", "")
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(aqualish_female)
+			EQ(0, "object/tangible/wearables/dress/shared_dress_s29.iff", "")
+			EQ(0, "object/tangible/wearables/necklace/shared_necklace_s02.iff", "")
+			EQ(0, "object/tangible/wearables/bracelet/shared_bracelet_s03_l.iff", "")
+			EQ(0, "object/tangible/wearables/bracelet/shared_bracelet_s03_r.iff", "")
+			EQ(0, "object/tangible/wearables/bracelet/shared_bracelet_s06_l.iff", "")
+			EQ(0, "object/tangible/wearables/bracelet/shared_bracelet_s06_r.iff", "")
+			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s07.iff", "")
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(arcona_male)
+			EQ(0, "object/tangible/wearables/shirt/shared_shirt_s03.iff", "")
+			EQ(0, "object/tangible/wearables/vest/shared_vest_s09.iff", "")
+			EQ(0, "object/tangible/wearables/necklace/shared_necklace_primitive_03.iff", "")
+			EQ(0, "object/tangible/wearables/pants/shared_pants_s13.iff", "")
+			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s01.iff", "")
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(bith_male)
+			EQ(0, "object/tangible/wearables/shirt/shared_shirt_s03.iff", "")
+			EQ(0, "object/tangible/wearables/vest/shared_vest_s09.iff", "")
+			EQ(0, "object/tangible/wearables/necklace/shared_necklace_primitive_03.iff", "")
+			EQ(0, "object/tangible/wearables/pants/shared_pants_s13.iff", "")
+			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s01.iff", "")
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(bith_female)
+			EQ(0, "object/tangible/wearables/dress/shared_dress_s29.iff", "")
+			EQ(0, "object/tangible/wearables/necklace/shared_necklace_s02.iff", "")
+			EQ(0, "object/tangible/wearables/bracelet/shared_bracelet_s03_l.iff", "")
+			EQ(0, "object/tangible/wearables/bracelet/shared_bracelet_s03_r.iff", "")
+			EQ(0, "object/tangible/wearables/bracelet/shared_bracelet_s06_l.iff", "")
+			EQ(0, "object/tangible/wearables/bracelet/shared_bracelet_s06_r.iff", "")
+			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s07.iff", "")
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(cerean_male)
+			EQ(0, "object/tangible/wearables/shirt/shared_shirt_s03.iff", "")
+			EQ(0, "object/tangible/wearables/vest/shared_vest_s09.iff", "")
+			EQ(0, "object/tangible/wearables/necklace/shared_necklace_primitive_03.iff", "")
+			EQ(0, "object/tangible/wearables/pants/shared_pants_s13.iff", "")
+			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s01.iff", "")
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(chiss_male)
+			EQ(0, "object/tangible/wearables/shirt/shared_shirt_s03.iff", "")
+			EQ(0, "object/tangible/wearables/vest/shared_vest_s09.iff", "")
+			EQ(0, "object/tangible/wearables/necklace/shared_necklace_primitive_03.iff", "")
+			EQ(0, "object/tangible/wearables/pants/shared_pants_s13.iff", "")
+			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s01.iff", "")
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(chiss_female)
+			EQ(0, "object/tangible/wearables/dress/shared_dress_s29.iff", "")
+			EQ(0, "object/tangible/wearables/necklace/shared_necklace_s02.iff", "")
+			EQ(0, "object/tangible/wearables/bracelet/shared_bracelet_s03_l.iff", "")
+			EQ(0, "object/tangible/wearables/bracelet/shared_bracelet_s03_r.iff", "")
+			EQ(0, "object/tangible/wearables/bracelet/shared_bracelet_s06_l.iff", "")
+			EQ(0, "object/tangible/wearables/bracelet/shared_bracelet_s06_r.iff", "")
+			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s07.iff", "")
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(devaronian_male)
+			EQ(0, "object/tangible/wearables/shirt/shared_shirt_s03.iff", "")
+			EQ(0, "object/tangible/wearables/vest/shared_vest_s09.iff", "")
+			EQ(0, "object/tangible/wearables/necklace/shared_necklace_primitive_03.iff", "")
+			EQ(0, "object/tangible/wearables/pants/shared_pants_s13.iff", "")
+			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s01.iff", "")
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(duros_male)
+			EQ(0, "object/tangible/wearables/shirt/shared_shirt_s03.iff", "")
+			EQ(0, "object/tangible/wearables/vest/shared_vest_s09.iff", "")
+			EQ(0, "object/tangible/wearables/necklace/shared_necklace_primitive_03.iff", "")
+			EQ(0, "object/tangible/wearables/pants/shared_pants_s13.iff", "")
+			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s01.iff", "")
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(gotal_male)
+			EQ(0, "object/tangible/wearables/shirt/shared_shirt_s03.iff", "")
+			EQ(0, "object/tangible/wearables/vest/shared_vest_s09.iff", "")
+			EQ(0, "object/tangible/wearables/necklace/shared_necklace_primitive_03.iff", "")
+			EQ(0, "object/tangible/wearables/pants/shared_pants_s13.iff", "")
+			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s01.iff", "")
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(gran_male)
+			EQ(0, "object/tangible/wearables/shirt/shared_shirt_s03.iff", "")
+			EQ(0, "object/tangible/wearables/vest/shared_vest_s09.iff", "")
+			EQ(0, "object/tangible/wearables/necklace/shared_necklace_primitive_03.iff", "")
+			EQ(0, "object/tangible/wearables/pants/shared_pants_s13.iff", "")
+			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s01.iff", "")
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(hutt_male)
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(hutt_female)
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(iktotchi_male)
+			EQ(0, "object/tangible/wearables/shirt/shared_shirt_s03.iff", "")
+			EQ(0, "object/tangible/wearables/vest/shared_vest_s09.iff", "")
+			EQ(0, "object/tangible/wearables/necklace/shared_necklace_primitive_03.iff", "")
+			EQ(0, "object/tangible/wearables/pants/shared_pants_s13.iff", "")
+			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s01.iff", "")
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(ishi_tib_male)
+			EQ(0, "object/tangible/wearables/shirt/shared_shirt_s03.iff", "")
+			EQ(0, "object/tangible/wearables/vest/shared_vest_s09.iff", "")
+			EQ(0, "object/tangible/wearables/necklace/shared_necklace_primitive_03.iff", "")
+			EQ(0, "object/tangible/wearables/pants/shared_pants_s13.iff", "")
+			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s01.iff", "")
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(jenet_male)
+			EQ(0, "object/tangible/wearables/shirt/shared_shirt_s03.iff", "")
+			EQ(0, "object/tangible/wearables/vest/shared_vest_s09.iff", "")
+			EQ(0, "object/tangible/wearables/necklace/shared_necklace_primitive_03.iff", "")
+			EQ(0, "object/tangible/wearables/pants/shared_pants_s13.iff", "")
+			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s01.iff", "")
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(kadassa_male)
+			EQ(0, "object/tangible/wearables/shirt/shared_shirt_s03.iff", "")
+			EQ(0, "object/tangible/wearables/vest/shared_vest_s09.iff", "")
+			EQ(0, "object/tangible/wearables/necklace/shared_necklace_primitive_03.iff", "")
+			EQ(0, "object/tangible/wearables/pants/shared_pants_s13.iff", "")
+			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s01.iff", "")
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(kel_dor_male)
+			EQ(0, "object/tangible/wearables/shirt/shared_shirt_s03.iff", "")
+			EQ(0, "object/tangible/wearables/vest/shared_vest_s09.iff", "")
+			EQ(0, "object/tangible/wearables/necklace/shared_necklace_primitive_03.iff", "")
+			EQ(0, "object/tangible/wearables/pants/shared_pants_s13.iff", "")
+			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s01.iff", "")
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(klatooinian_male)
+			EQ(0, "object/tangible/wearables/shirt/shared_shirt_s03.iff", "")
+			EQ(0, "object/tangible/wearables/vest/shared_vest_s09.iff", "")
+			EQ(0, "object/tangible/wearables/necklace/shared_necklace_primitive_03.iff", "")
+			EQ(0, "object/tangible/wearables/pants/shared_pants_s13.iff", "")
+			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s01.iff", "")
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(kubaz_male)
+			EQ(0, "object/tangible/wearables/shirt/shared_shirt_s03.iff", "")
+			EQ(0, "object/tangible/wearables/vest/shared_vest_s09.iff", "")
+			EQ(0, "object/tangible/wearables/necklace/shared_necklace_primitive_03.iff", "")
+			EQ(0, "object/tangible/wearables/pants/shared_pants_s13.iff", "")
+			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s01.iff", "")
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(marauder_male)
+			EQ(0, "object/tangible/wearables/shirt/shared_shirt_s03.iff", "")
+			EQ(0, "object/tangible/wearables/vest/shared_vest_s09.iff", "")
+			EQ(0, "object/tangible/wearables/necklace/shared_necklace_primitive_03.iff", "")
+			EQ(0, "object/tangible/wearables/pants/shared_pants_s13.iff", "")
+			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s01.iff", "")
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(marauder_female)
+			EQ(0, "object/tangible/wearables/dress/shared_dress_s29.iff", "")
+			EQ(0, "object/tangible/wearables/necklace/shared_necklace_s02.iff", "")
+			EQ(0, "object/tangible/wearables/bracelet/shared_bracelet_s03_l.iff", "")
+			EQ(0, "object/tangible/wearables/bracelet/shared_bracelet_s03_r.iff", "")
+			EQ(0, "object/tangible/wearables/bracelet/shared_bracelet_s06_l.iff", "")
+			EQ(0, "object/tangible/wearables/bracelet/shared_bracelet_s06_r.iff", "")
+			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s07.iff", "")
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(nautolan_male)
+			EQ(0, "object/tangible/wearables/shirt/shared_shirt_s03.iff", "")
+			EQ(0, "object/tangible/wearables/vest/shared_vest_s09.iff", "")
+			EQ(0, "object/tangible/wearables/necklace/shared_necklace_primitive_03.iff", "")
+			EQ(0, "object/tangible/wearables/pants/shared_pants_s13.iff", "")
+			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s01.iff", "")
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(nightsister_female)
+			EQ(0, "object/tangible/wearables/dress/shared_dress_s29.iff", "")
+			EQ(0, "object/tangible/wearables/necklace/shared_necklace_s02.iff", "")
+			EQ(0, "object/tangible/wearables/bracelet/shared_bracelet_s03_l.iff", "")
+			EQ(0, "object/tangible/wearables/bracelet/shared_bracelet_s03_r.iff", "")
+			EQ(0, "object/tangible/wearables/bracelet/shared_bracelet_s06_l.iff", "")
+			EQ(0, "object/tangible/wearables/bracelet/shared_bracelet_s06_r.iff", "")
+			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s07.iff", "")
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(nikto_male)
+			EQ(0, "object/tangible/wearables/shirt/shared_shirt_s03.iff", "")
+			EQ(0, "object/tangible/wearables/vest/shared_vest_s09.iff", "")
+			EQ(0, "object/tangible/wearables/necklace/shared_necklace_primitive_03.iff", "")
+			EQ(0, "object/tangible/wearables/pants/shared_pants_s13.iff", "")
+			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s01.iff", "")
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(quarren_male)
+			EQ(0, "object/tangible/wearables/shirt/shared_shirt_s03.iff", "")
+			EQ(0, "object/tangible/wearables/vest/shared_vest_s09.iff", "")
+			EQ(0, "object/tangible/wearables/necklace/shared_necklace_primitive_03.iff", "")
+			EQ(0, "object/tangible/wearables/pants/shared_pants_s13.iff", "")
+			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s01.iff", "")
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(smc_female)
+			EQ(0, "object/tangible/wearables/dress/shared_dress_s29.iff", "")
+			EQ(0, "object/tangible/wearables/necklace/shared_necklace_s02.iff", "")
+			EQ(0, "object/tangible/wearables/bracelet/shared_bracelet_s03_l.iff", "")
+			EQ(0, "object/tangible/wearables/bracelet/shared_bracelet_s03_r.iff", "")
+			EQ(0, "object/tangible/wearables/bracelet/shared_bracelet_s06_l.iff", "")
+			EQ(0, "object/tangible/wearables/bracelet/shared_bracelet_s06_r.iff", "")
+			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s07.iff", "")
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(talz_male)
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(talz_female)
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(togruta_female)
+			EQ(0, "object/tangible/wearables/dress/shared_dress_s29.iff", "")
+			EQ(0, "object/tangible/wearables/necklace/shared_necklace_s02.iff", "")
+			EQ(0, "object/tangible/wearables/bracelet/shared_bracelet_s03_l.iff", "")
+			EQ(0, "object/tangible/wearables/bracelet/shared_bracelet_s03_r.iff", "")
+			EQ(0, "object/tangible/wearables/bracelet/shared_bracelet_s06_l.iff", "")
+			EQ(0, "object/tangible/wearables/bracelet/shared_bracelet_s06_r.iff", "")
+			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s07.iff", "")
+		}
+		form "PTMP"
+		{
+			PLAYER_TEMPLATE_NAME(weequay_male)
+			EQ(0, "object/tangible/wearables/shirt/shared_shirt_s03.iff", "")
+			EQ(0, "object/tangible/wearables/vest/shared_vest_s09.iff", "")
+			EQ(0, "object/tangible/wearables/necklace/shared_necklace_primitive_03.iff", "")
+			EQ(0, "object/tangible/wearables/pants/shared_pants_s13.iff", "")
+			EQ(0, "object/tangible/wearables/shoes/shared_shoes_s01.iff", "")
+		}
 	}
 }
 
