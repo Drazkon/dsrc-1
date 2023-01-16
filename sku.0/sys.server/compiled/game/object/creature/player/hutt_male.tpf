@@ -6,4 +6,4 @@
 
 @class object_template 0
 
-sharedTemplate = "object/creature/player/shared_hut_male.iff"
+sharedTemplate = "object/creature/player/shared_hutt_male.iff"
