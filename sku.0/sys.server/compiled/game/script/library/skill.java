@@ -900,7 +900,8 @@ public class skill extends script.base_script
             }
             else 
             {
-                sendSystemMessageTestingOnly(player, "Unknown race, defaulting to human");
+                //commenting out the message, but leaving the function this is fine for additional species to be regarded as human here
+                //sendSystemMessageTestingOnly(player, "Unknown race, defaulting to human");
                 LOG("npe", "library.skill - getPlayerStatForLevel invalid race, using human defaults");
                 playerRace = 0;
             }

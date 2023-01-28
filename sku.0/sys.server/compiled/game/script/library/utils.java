@@ -5548,11 +5548,16 @@ public class utils extends script.base_script
         {
             return false;
         }
+
+        // get the object in the slotted container that exists in the slot 'hair'
         obj_id hair = getObjectInSlot(player, "hair");
+
+        // make sure that we actually got back an object
         if (!isIdValid(hair))
         {
             return false;
         }
+
         String hair_table = "datatables/customization/hair_assets_skill_mods.iff";
 
         //get number of rows and loop through datatable for identical rows (for use when multiple species have the same hair styles)
@@ -5577,7 +5582,8 @@ public class utils extends script.base_script
             if (temp_template.matches(hair_template))
             {
                 idxList.add(i);
-                sendSystemMessageTestingOnly(player, "matching template: " + temp_template);
+                //used when trouble shooting
+                //sendSystemMessageTestingOnly(player, "matching template: " + temp_template);
             }
 
         }
@@ -5590,36 +5596,48 @@ public class utils extends script.base_script
         //if (idx < 0)
         if (idxList.size() < 0)
         {
-            sendSystemMessageTestingOnly(player, "idxList Empty");
+            //used when trouble shooting
+            //sendSystemMessageTestingOnly(player, "idxList Empty");
             return false;
         }
 
         //commenting out old way of only grabbing a single species match per hair style
+        // open this table and find the LAST value of the template name of the object in the hair slot
+        // e.g. object/tangible/hair/bothan/hair_bothan_female_s13.iff
         //String required_template = dataTableGetString(hair_table, idx, "SERVER_PLAYER_TEMPLATE");
 
         List<String> required_templates = new ArrayList<String>();
         for (int i = 0; i < idxList.size(); i++)
         {
             required_templates.add(dataTableGetString(hair_table, idxList.get(i), "SERVER_PLAYER_TEMPLATE"));
+            //used when trouble shooting
+            //String temp_required_template = null;
+            //temp_required_template = dataTableGetString(hair_table, idxList.get(i), "SERVER_PLAYER_TEMPLATE");
+            //sendSystemMessageTestingOnly(player, "Required Template: " + temp_required_template);
         }
 
         //if (required_template == null)
+        // validate that we actually got data from that
         if (required_templates.size() < 0)
         {
             return false;
         }
-
-        String player_template = getTemplateName(player);
         
+        String player_template = getTemplateName(player);
         //used when trouble shooting
-        sendSystemMessageTestingOnly(player, "player template: " + player_template);
+        //sendSystemMessageTestingOnly(player, "player template: " + player_template);
         
         //if (!player_template.equals(required_template))
+        // compare whether the template of the player matches the required template (i.e. species match)
+        // if they don't...
         if (!required_templates.contains(player_template))
         {
+            // find a suitable replacement for the player if we can 
             String new_hair_template = dataTableGetString(hair_table, dataTableSearchColumnForString(player_template, "SERVER_PLAYER_TEMPLATE", hair_table), "SERVER_TEMPLATE");
             if (new_hair_template == null)
             {
+                //illegal hair should be destroyed regardless of if there is a replacement or not
+                destroyObject(hair);
                 CustomerServiceLog("imageDesigner", getFirstName(player) + "(" + player + ") has an invalid hairstyle, but a replacement cannot be found!");
                 return false;
             }
