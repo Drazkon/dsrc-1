@@ -69,17 +69,17 @@ class_bountyhunter_phase4_04	class_bountyhunter_phase4_03	oneByFour	0	0	0	0	100	
 class_bountyhunter_phase4_05	class_bountyhunter_phase4_04	oneByFour	0	0	0	0	100	0		class_bountyhunter_phase4_04		combat_general	2365000	3540940							bh_del_cc_3,bountycheck	droid_tracks=2,droid_track_speed=10			1	0
 class_bountyhunter_phase4_master	class_bountyhunter_phase4	oneByFour	0	1	0	0	100	0		class_bountyhunter_phase4_05		combat_general	2723800	3540940							bh_del_dm_cc_dot_3,bh_conceal_1,bh_detect_camouflage_1	droid_find_chance=10,droid_find_speed=10,droid_tracks=2,droid_track_chance=10,cybernetic_psychosis_resistance=2			1	0
 class_smuggler_phase1	class	oneByFour	0	0	1	0	0	0						0											1	0
-class_smuggler_phase1_novice	class_smuggler_phase1	oneByFour	0	0	0	0	100	0				combat_general	100	4810							sm_fast_draw,sm_precision_strike,sm_inspect_cargo	slope_move=25,cybernetic_psychosis_resistance=2			1	0
+class_smuggler_phase1_novice	class_smuggler_phase1	oneByFour	0	0	0	0	100	0				combat_general	100	4810							sm_fast_draw,sm_precision_strike,sm_inspect_cargo	slope_move=25,cybernetic_psychosis_resistance=2	craftSmugglerSpiceNovice		1	0
 class_smuggler_phase1_02	class_smuggler_phase1	oneByFour	0	0	0	0	100	0		class_smuggler_phase1_novice		combat_general	3700	16120							sm_concussion_shot,sm_dizzy				1	0
 class_smuggler_phase1_03	class_smuggler_phase1_02	oneByFour	0	0	0	0	100	0		class_smuggler_phase1_02		combat_general	12400	30160							sm_ae_cover_fire,sm_sh_0,sm_ae_pin_down				1	0
 class_smuggler_phase1_04	class_smuggler_phase1_03	oneByFour	0	0	0	0	100	0		class_smuggler_phase1_03		combat_general	23200	67730							sm_dm_1,sm_dm_cc_1,sm_dm_cc_melee_1,sm_dm_melee_1,sm_summon_smuggler,sm_sly_lie,sm_fast_talk,droid_flame_jet_1,droid_droideka_shield_1,droid_battery_dump_1,droid_regenerative_plating_1,droid_electrical_shock_1,droid_torturous_needle_1,droid_follow,droid_follow_other,droid_stay,droid_guard,droid_friend,droid_attack,droid_patrol,droid_patrol_point,droid_patrol_clear,droid_store,droid_transfer,droid_group,droid_trick_1,droid_trick_2,droid_trick_3,droid_trick_4	expertise_half_truth=100,expertise_sly_lie_bonus=10,expertise_fast_talk_bonus=10,expertise_fake_id=50,expertise_sly_lie_rank=10,expertise_fast_talk_rank=10			1	0
-class_smuggler_phase1_05	class_smuggler_phase1_04	oneByFour	0	0	0	0	100	0		class_smuggler_phase1_04		combat_general	52100	105300							fence,sm_ae_dm_cc_1,sm_ae_dm_cc_melee_1				1	0
+class_smuggler_phase1_05	class_smuggler_phase1_04	oneByFour	0	0	0	0	100	0		class_smuggler_phase1_04		combat_general	52100	105300							fence,sm_ae_dm_cc_1,sm_ae_dm_cc_melee_1		craftSmugglerSpiceA		1	0
 class_smuggler_phase1_master	class_smuggler_phase1	oneByFour	0	1	0	0	100	0		class_smuggler_phase1_05		combat_general	81000	151060							sm_dm_2,sm_dm_cc_2,sm_dm_cc_melee_2,sm_dm_melee_2	slope_move=25,expertise_innocent_cargo=100,expertise_sly_lie_bonus=10,expertise_fast_talk_bonus=10,expertise_underworld_boss_bonus=200,cybernetic_psychosis_resistance=2			1	0
 class_smuggler_phase2	class	oneByFour	0	0	1	0	0	0						0											1	0
 class_smuggler_phase2_novice	class_smuggler_phase2	oneByFour	0	0	0	0	100	0		class_smuggler_phase1_master		combat_general	116200	205140							wear_all_armor,sm_ae_dm_cc_2,sm_ae_dm_cc_melee_2				1	0
 class_smuggler_phase2_02	class_smuggler_phase2	oneByFour	0	0	0	0	100	0		class_smuggler_phase2_novice		combat_general	157800	267540							sm_del_dm_cc_1,sm_dm_3,sm_dm_melee_3	expertise_sm_rank_range_buff=1,expertise_sm_rank_damage_buff=1			1	0
 class_smuggler_phase2_03	class_smuggler_phase2_02	oneByFour	0	0	0	0	100	0		class_smuggler_phase2_02		combat_general	205800	339690							sm_modify_pistol_1,sm_ae_dm_1,sm_ae_dm_melee_1,sm_dm_cc_3,sm_dm_cc_melee_3				1	0
-class_smuggler_phase2_04	class_smuggler_phase2_03	oneByFour	0	0	0	0	100	0		class_smuggler_phase2_03		combat_general	261300	423410							sm_sh_1,sm_ae_dm_cc_3,sm_ae_dm_cc_melee_3				1	0
+class_smuggler_phase2_04	class_smuggler_phase2_03	oneByFour	0	0	0	0	100	0		class_smuggler_phase2_03		combat_general	261300	423410							sm_sh_1,sm_ae_dm_cc_3,sm_ae_dm_cc_melee_3		craftSmugglerSpiceB		1	0
 class_smuggler_phase2_05	class_smuggler_phase2_04	oneByFour	0	0	0	0	100	0		class_smuggler_phase2_04		combat_general	325700	519610							sm_del_dm_cc_2,sm_dm_4,sm_dm_cc_4,sm_dm_cc_melee_4,sm_dm_melee_4				1	0
 class_smuggler_phase2_master	class_smuggler_phase2	oneByFour	0	1	0	0	100	0		class_smuggler_phase2_05		combat_general	399700	629980							sm_ae_dm_2,sm_ae_dm_melee_2,sm_dm_dot_1,sm_dm_dot_melee_1	cybernetic_psychosis_resistance=2			1	0
 class_smuggler_phase3	class	oneByFour	0	0	1	0	0	0																	1	0
@@ -87,7 +87,7 @@ class_smuggler_phase3_novice	class_smuggler_phase3	oneByFour	0	0	0	0	100	0		clas
 class_smuggler_phase3_02	class_smuggler_phase3	oneByFour	0	0	0	0	100	0		class_smuggler_phase3_novice		combat_general	582200	901160							sm_del_dm_cc_3,sm_dm_cc_5,sm_dm_cc_melee_5				1	0
 class_smuggler_phase3_03	class_smuggler_phase3_02	oneByFour	0	0	0	0	100	0		class_smuggler_phase3_02		combat_general	693200	1065610							sm_ae_dm_3,sm_ae_dm_melee_3,sm_dm_5,sm_dm_melee_5				1	0
 class_smuggler_phase3_04	class_smuggler_phase3_03	oneByFour	0	0	0	0	100	0		class_smuggler_phase3_03		combat_general	819700	1252940							sm_sh_2,sm_modify_pistol_2,sm_ae_dm_cc_5,sm_ae_dm_cc_melee_5,sm_dm_dot_2,sm_dm_dot_melee_2				1	0
-class_smuggler_phase3_05	class_smuggler_phase3_04	oneByFour	0	0	0	0	100	0		class_smuggler_phase3_04		combat_general	963800	1466790							sm_dm_cc_6,sm_dm_cc_melee_6,				1	0
+class_smuggler_phase3_05	class_smuggler_phase3_04	oneByFour	0	0	0	0	100	0		class_smuggler_phase3_04		combat_general	963800	1466790							sm_dm_cc_6,sm_dm_cc_melee_6,		craftSmugglerSpiceC		1	0
 class_smuggler_phase3_master	class_smuggler_phase3	oneByFour	0	1	0	0	100	0		class_smuggler_phase3_05		combat_general	1128300	1710540							sm_del_dm_cc_4,sm_ae_dm_4,sm_ae_dm_melee_4,sm_dm_6,sm_dm_melee_6	cybernetic_psychosis_resistance=2			1	0
 class_smuggler_phase4	class	oneByFour	0	0	1	0	0	0						0											1	0
 class_smuggler_phase4_novice	class_smuggler_phase4	oneByFour	0	0	0	0	100	0		class_smuggler_phase3_master		combat_general	1315800	1988090							sm_dm_dot_3,sm_dm_dot_melee_3				1	0
@@ -95,7 +95,7 @@ class_smuggler_phase4_02	class_smuggler_phase4	oneByFour	0	0	0	0	100	0		class_sm
 class_smuggler_phase4_03	class_smuggler_phase4_02	oneByFour	0	0	0	0	100	0		class_smuggler_phase4_02		combat_general	1772600	2664480							sm_del_dm_cc_5				1	0
 class_smuggler_phase4_04	class_smuggler_phase4_03	oneByFour	0	0	0	0	100	0		class_smuggler_phase4_03		combat_general	2049600	3074500							sm_sh_3,sm_dm_7,sm_dm_melee_7				1	0
 class_smuggler_phase4_05	class_smuggler_phase4_04	oneByFour	0	0	0	0	100	0		class_smuggler_phase4_04		combat_general	2365000	3540940							sm_modify_pistol_3,sm_dm_dot_4,sm_dm_dot_melee_4				1	0
-class_smuggler_phase4_master	class_smuggler_phase4	oneByFour	0	1	0	0	100	0		class_smuggler_phase4_05		combat_general	2723800	3540940							sm_del_dm_cc_6,sm_ae_dm_6,sm_ae_dm_melee_6,sm_disarm_trap_1,sm_buff_invis_ally_1	cybernetic_psychosis_resistance=2			1	0
+class_smuggler_phase4_master	class_smuggler_phase4	oneByFour	0	1	0	0	100	0		class_smuggler_phase4_05		combat_general	2723800	3540940							sm_del_dm_cc_6,sm_ae_dm_6,sm_ae_dm_melee_6,sm_disarm_trap_1,sm_buff_invis_ally_1	cybernetic_psychosis_resistance=2	craftSmugglerSpiceD		1	0
 class_commando_phase1	class	oneByFour	0	0	1	0	0	0						0											1	0
 class_commando_phase1_novice	class_commando_phase1	oneByFour	0	0	0	0	100	0				combat_general	100	4810							co_dm_1,co_empowered_attack	slope_move=25,cybernetic_psychosis_resistance=2			1	0
 class_commando_phase1_02	class_commando_phase1	oneByFour	0	0	0	0	100	0		class_commando_phase1_novice		combat_general	3700	16120							co_del_ae_cc_1_1				1	0
@@ -183,31 +183,31 @@ class_spy_phase4_master	class_spy_phase4	oneByFour	0	1	0	0	100	0		class_spy_phas
 class_medic_phase1	class	oneByFour	0	0	1	0	0	0						0											1	0
 class_medic_phase1_novice	class_medic_phase1	oneByFour	0	0	0	0	100	0				combat_general	100	4810							me_ae_heal_1	slope_move=25,cybernetic_psychosis_resistance=2			1	0
 class_medic_phase1_02	class_medic_phase1	oneByFour	0	0	0	0	100	0		class_medic_phase1_novice		combat_general	3700	16120							me_dm_1				1	0
-class_medic_phase1_03	class_medic_phase1_02	oneByFour	0	0	0	0	100	0		class_medic_phase1_02		combat_general	12400	30160							me_dm_dot_1				1	0
+class_medic_phase1_03	class_medic_phase1_02	oneByFour	0	0	0	0	100	0		class_medic_phase1_02		combat_general	12400	30160							me_dm_dot_1		craftMedicineStimpackGroupA,craftMedicineComponentGroupA		1	0
 class_medic_phase1_04	class_medic_phase1_03	oneByFour	0	0	0	0	100	0		class_medic_phase1_03		combat_general	23200	67730							me_ae_heal_2,me_rv_ooc,me_rv_pvp_single,droid_flame_jet_1,droid_droideka_shield_1,droid_battery_dump_1,droid_regenerative_plating_1,droid_electrical_shock_1,droid_torturous_needle_1,droid_follow,droid_follow_other,droid_stay,droid_guard,droid_friend,droid_attack,droid_patrol,droid_patrol_point,droid_patrol_clear,droid_store,droid_transfer,droid_group,droid_trick_1,droid_trick_2,droid_trick_3,droid_trick_4				1	0
-class_medic_phase1_05	class_medic_phase1_04	oneByFour	0	0	0	0	100	0		class_medic_phase1_04		combat_general	52100	105300							me_dm_2,me_bacta_ampule_1				1	0
+class_medic_phase1_05	class_medic_phase1_04	oneByFour	0	0	0	0	100	0		class_medic_phase1_04		combat_general	52100	105300							me_dm_2,me_bacta_ampule_1		craftMedicalEnhancersA		1	0
 class_medic_phase1_master	class_medic_phase1	oneByFour	0	1	0	0	100	0		class_medic_phase1_05		combat_general	81000	151060							me_dm_3	slope_move=25,cybernetic_psychosis_resistance=2			1	0
 class_medic_phase2	class	oneByFour	0	0	1	0	0	0						0											1	0
-class_medic_phase2_novice	class_medic_phase2	oneByFour	0	0	0	0	100	0		class_medic_phase1_master		combat_general	116200	205140							me_dm_dot_2,wear_all_armor				1	0
+class_medic_phase2_novice	class_medic_phase2	oneByFour	0	0	0	0	100	0		class_medic_phase1_master		combat_general	116200	205140							me_dm_dot_2,wear_all_armor		craftMedicalEnhancersB		1	0
 class_medic_phase2_02	class_medic_phase2	oneByFour	0	0	0	0	100	0		class_medic_phase2_novice		combat_general	157800	267540							me_dm_dot_3,place_hospital,me_bacta_ampule_2	private_place_hospital=100			1	0
 class_medic_phase2_03	class_medic_phase2_02	oneByFour	0	0	0	0	100	0		class_medic_phase2_02		combat_general	205800	339690							me_ae_heal_3				1	0
-class_medic_phase2_04	class_medic_phase2_03	oneByFour	0	0	0	0	100	0		class_medic_phase2_03		combat_general	261300	423410							me_hot_1				1	0
+class_medic_phase2_04	class_medic_phase2_03	oneByFour	0	0	0	0	100	0		class_medic_phase2_03		combat_general	261300	423410							me_hot_1		craftMedicineStimpackGroupB,craftMedicineComponentGroupB		1	0
 class_medic_phase2_05	class_medic_phase2_04	oneByFour	0	0	0	0	100	0		class_medic_phase2_04		combat_general	325700	519610							me_fld_dm_dot_1,me_rv_area,me_rv_pvp_area				1	0
 class_medic_phase2_master	class_medic_phase2	oneByFour	0	1	0	0	100	0		class_medic_phase2_05		combat_general	399700	629980							me_dm_4,me_bacta_ampule_3	cybernetic_psychosis_resistance=2			1	0
-class_medic_phase3	class	oneByFour	0	0	1	0	0	0																	1	0
+class_medic_phase3	class	oneByFour	0	0	1	0	0	0															craftMedicalEnhancersC		1	0
 class_medic_phase3_novice	class_medic_phase3	oneByFour	0	0	0	0	100	0		class_medic_phase2_master		combat_general	484600	756860							me_buff_health_1,me_dm_dot_4				1	0
-class_medic_phase3_02	class_medic_phase3	oneByFour	0	0	0	0	100	0		class_medic_phase3_novice		combat_general	582200	901160							me_fld_dm_dot_2				1	0
+class_medic_phase3_02	class_medic_phase3	oneByFour	0	0	0	0	100	0		class_medic_phase3_novice		combat_general	582200	901160							me_fld_dm_dot_2		craftMedicineStimpackGroupC,craftMedicineComponentGroupC		1	0
 class_medic_phase3_03	class_medic_phase3_02	oneByFour	0	0	0	0	100	0		class_medic_phase3_02		combat_general	693200	1065610							me_dm_5,me_bacta_ampule_4				1	0
 class_medic_phase3_04	class_medic_phase3_03	oneByFour	0	0	0	0	100	0		class_medic_phase3_03		combat_general	819700	1252940							me_ae_heal_4				1	0
 class_medic_phase3_05	class_medic_phase3_04	oneByFour	0	0	0	0	100	0		class_medic_phase3_04		combat_general	963800	1466790							me_hot_2				1	0
 class_medic_phase3_master	class_medic_phase3	oneByFour	0	1	0	0	100	0		class_medic_phase3_05		combat_general	1128300	1710540							me_dm_6,me_dm_dot_5,me_bacta_ampule_5	cybernetic_psychosis_resistance=2			1	0
-class_medic_phase4	class	oneByFour	0	0	1	0	0	0						0											1	0
+class_medic_phase4	class	oneByFour	0	0	1	0	0	0						0									craftMedicineStimpackGroupD,craftMedicineComponentGroupD,craftMedicineComponentGroupE		1	0
 class_medic_phase4_novice	class_medic_phase4	oneByFour	0	0	0	0	100	0		class_medic_phase3_master		combat_general	1315800	1988090							me_hot_3				1	0
 class_medic_phase4_02	class_medic_phase4	oneByFour	0	0	0	0	100	0		class_medic_phase4_novice		combat_general	1529300	2304380							me_fld_dm_dot_3,me_rv_combat				1	0
-class_medic_phase4_03	class_medic_phase4_02	oneByFour	0	0	0	0	100	0		class_medic_phase4_02		combat_general	1772600	2664480							me_ae_heal_5				1	0
+class_medic_phase4_03	class_medic_phase4_02	oneByFour	0	0	0	0	100	0		class_medic_phase4_02		combat_general	1772600	2664480							me_ae_heal_5		craftMedicalEnhancersD		1	0
 class_medic_phase4_04	class_medic_phase4_03	oneByFour	0	0	0	0	100	0		class_medic_phase4_03		combat_general	2049600	3074500							me_sh_1,me_dm_dot_6				1	0
 class_medic_phase4_05	class_medic_phase4_04	oneByFour	0	0	0	0	100	0		class_medic_phase4_04		combat_general	2365000	3540940							me_dm_8,me_bacta_ampule_6				1	0
-class_medic_phase4_master	class_medic_phase4	oneByFour	0	1	0	0	100	0		class_medic_phase4_05		combat_general	2723800	3540940							me_ae_heal_6	cybernetic_psychosis_resistance=2			1	0
+class_medic_phase4_master	class_medic_phase4	oneByFour	0	1	0	0	100	0		class_medic_phase4_05		combat_general	2723800	3540940							me_ae_heal_6	cybernetic_psychosis_resistance=2	craftMedicineStimpackGroupE,craftMedicineComponentGroupF,craftMedicineComponentGroupG,craftMedicineComponentGroupH,craftMedicineComponentGroupI		1	0
 class_entertainer_phase1	class	oneByFour	0	0	1	0	0	0						0											1	0
 class_entertainer_phase1_novice	class_entertainer_phase1	oneByFour	0	0	0	0	100	0				entertainer	100	4810							fizz,spotlight,startMusic+rock,flourish+1,flourish+2,flourish+3,flourish+4,flourish+5,flourish+6,flourish+7,flourish+8,imagedesign,covercharge,inspire,registerWithLocation,musician,dancer,groupdance	hair=1,face=1,slope_move=25,instrument_customization=20,cybernetic_psychosis_resistance=2	craftDancePropA,craftInstrumentGroupA,craftInstrumentGroupB		1	0
 class_entertainer_phase1_02	class_entertainer_phase1	oneByFour	0	1	0	0	100	0		class_entertainer_phase1_novice		entertainer	3700	16120							prop_staff,colorlights,startDance+basic2	hair=1,instrument_customization=20			1	0

@@ -397,7 +397,7 @@ public class mission_player extends script.systems.missions.base.mission_player_
         obj_id[] objMissionArray = getMissionObjects(self);
         if (objMissionArray != null)
         {
-            if (objMissionArray.length >= MAX_MISSIONS)
+            if (objMissionArray.length >= 6) //MAX_MISSION
             {
                 string_id strSpam = new string_id("mission/mission_generic", "too_many_missions");
                 sendSystemMessage(self, strSpam);

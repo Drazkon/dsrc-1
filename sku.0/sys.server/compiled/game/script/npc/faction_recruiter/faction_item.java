@@ -13,10 +13,10 @@ public class faction_item extends script.base_script
     {
         if (isPlayer(destContainer))
         {
-            if (!factions.canUseFactionItem(destContainer, self))
+            /*if (!factions.canUseFactionItem(destContainer, self))
             {
                 return SCRIPT_OVERRIDE;
-            }
+            }*/
         }
         if (isAPlayerAppearanceInventoryContainer(destContainer))
         {
@@ -25,10 +25,11 @@ public class faction_item extends script.base_script
             {
                 return SCRIPT_OVERRIDE;
             }
-            if (!factions.canUseFactionItem(owner, self))
+            //allow any appearance armor to be worn
+            /*if (!factions.canUseFactionItem(owner, self))
             {
                 return SCRIPT_OVERRIDE;
-            }
+            }*/
         }
         return SCRIPT_CONTINUE;
     }

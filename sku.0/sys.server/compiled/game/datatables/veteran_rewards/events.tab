@@ -48,3 +48,5 @@ HousePackupReward	return_painting			1	0	0	0		0	0		1	veteran_new:announcement_ret
 Summit2007	painting_summit_s02			1	16777216	0	0		0	0		0	veteran_new:announcement_2007_summit	veteran_new:choice_description	web.archive.org/web/20090207200717/http://starwarsgalaxies.station.sony.com/content.vm?page=Veteran%20Rewards								
 itvRoyal	instant_travel_royal_ship			0	33554432	0	0		0	0		0	veteran_new:announcement_itv_royal	veteran_new:choice_description	web.archive.org/web/20090207200717/http://starwarsgalaxies.station.sony.com/content.vm?page=Veteran%20Rewards	2018	12	15	2019	2	1		
 fan_gathering_08	fan_gathering_08			0	134217728	0	0		0	0		0	veteran_new:announcement_galactic_gathering_08	veteran_new:choice_description	web.archive.org/web/20090207200717/http://starwarsgalaxies.station.sony.com/content.vm?page=Veteran%20Rewards	2016	12	15	2017	2	1		
+heroic_gift	heroic_gift			0	0	0	0		0	0		1	veteran_new:heroic_scroll_bundle	veteran_new:heroic_gift									
+jewelry_gift	jewelry_gift			0	0	0	0		0	0		1	veteran_new:jewelry_crate	veteran_new:jewelry_gift									

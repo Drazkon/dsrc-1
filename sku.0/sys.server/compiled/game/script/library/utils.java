@@ -149,7 +149,7 @@ public class utils extends script.base_script
     }
     public static boolean hasSpecialSkills(obj_id player) throws InterruptedException
     {
-        boolean skillCheck = false;
+        boolean skillCheck = true;
         if (hasSkill(player, "class_commando_phase4_master"))
         {
             skillCheck = true;

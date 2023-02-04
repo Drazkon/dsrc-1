@@ -97,3 +97,5 @@ maul_statue	veteran_new:maul_statue	item_vet_reward_72month_darth_maul	0	0		0
 84month_isd_console_row	veteran_new:vet_84month_isd_console_row	item_vet_reward_sd_console_02	0	0		0		
 87month_respec_reset	veteran_new:vet_87month_respec_reset	vet_reward_respec_reset	0	0		0		
 90month_resource_crate	veteran_new:vet_90month_resource_crate	vet_reward_resource_crate	0	0		0		
+heroic_gift	veteran_new:heroic_gift	object/tangible/item/heroic_gift.iff	0	1		0		
+jewelry_gift	veteran_new:jewelry_gift	object/tangible/item/jewelry_gift.iff	0	1		0		

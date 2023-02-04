@@ -83,6 +83,7 @@ public class combat_supply_drop_controller extends script.base_script
         utils.setScriptVar(crate, "supply_drop.crateOwner", owner);
         attachScript(crate, "systems.combat.combat_supply_drop_crate");
         String itemString = "";
+        String itemString2 = "";
         switch (supplyId)
         {
             case 0:
@@ -111,39 +112,51 @@ public class combat_supply_drop_controller extends script.base_script
             break;
             case 1:
             itemString = "item_off_temp_stimpack_02_01";
+            itemString2 = "item_off_temp_tactical_buff_02_01";
             break;
             case 2:
             itemString = "item_off_temp_stimpack_02_02";
+            itemString2 = "item_off_temp_tactical_buff_02_02";
             break;
             case 3:
             itemString = "item_off_temp_stimpack_02_03";
+            itemString2 = "item_off_temp_tactical_buff_02_03";
             break;
             case 4:
             itemString = "item_off_temp_stimpack_02_04";
+            itemString2 = "item_off_temp_tactical_buff_02_04";
             break;
             case 5:
             itemString = "item_off_temp_stimpack_02_05";
+            itemString2 = "item_off_temp_tactical_buff_02_05";
             break;
             case 6:
             itemString = "item_off_temp_stimpack_02_06";
+            itemString2 = "item_off_temp_tactical_buff_02_06";
             break;
             case 7:
-            itemString = "item_off_temp_tactical_buff_02_01";
+            itemString = "item_off_temp_stimpack_02_01";
+            itemString2 = "item_off_temp_tactical_buff_02_01";
             break;
             case 8:
-            itemString = "item_off_temp_tactical_buff_02_02";
+            itemString = "item_off_temp_stimpack_02_02";
+            itemString2 = "item_off_temp_tactical_buff_02_02";
             break;
             case 9:
-            itemString = "item_off_temp_tactical_buff_02_03";
+            itemString = "item_off_temp_stimpack_02_03";
+            itemString2 = "item_off_temp_tactical_buff_02_03";;
             break;
             case 10:
-            itemString = "item_off_temp_tactical_buff_02_04";
+            itemString = "item_off_temp_stimpack_02_04";
+            itemString2 = "item_off_temp_tactical_buff_02_04";
             break;
             case 11:
-            itemString = "item_off_temp_tactical_buff_02_05";
+            itemString = "item_off_temp_stimpack_02_05";
+            itemString2 = "item_off_temp_tactical_buff_02_05";
             break;
             case 12:
-            itemString = "item_off_temp_tactical_buff_02_06";
+            itemString = "item_off_temp_stimpack_02_06";
+            itemString2 = "item_off_temp_tactical_buff_02_06";
             break;
         }
         if (supplyId > 0 && supplyId <= 12 && (itemString != null || !itemString.equals("")))
@@ -151,6 +164,10 @@ public class combat_supply_drop_controller extends script.base_script
             for (int i = 0; i < GROUP_SIZE; i++)
             {
                 static_item.createNewItemFunction(itemString, crate);
+            }
+            for (int i = 0; i < GROUP_SIZE; i++)
+            {
+                static_item.createNewItemFunction(itemString2, crate);
             }
         }
         dictionary d = new dictionary();

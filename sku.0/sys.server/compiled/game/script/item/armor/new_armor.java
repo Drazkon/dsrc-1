@@ -119,13 +119,9 @@ public class new_armor extends script.base_script
     }
     public int OnAboutToBeTransferred(obj_id self, obj_id destContainer, obj_id transferer) throws InterruptedException
     {
-        if (isPlayer(destContainer) || isAPlayerAppearanceInventoryContainer(destContainer))
+        if (isPlayer(destContainer))
         {
             obj_id player = destContainer;
-            if (isAPlayerAppearanceInventoryContainer(destContainer))
-            {
-                player = getContainedBy(destContainer);
-            }
             if (!armor.isArmorCertified(player, self) || (utils.isMando(self) && !utils.hasSpecialSkills(player)))
             {
                 prose_package pp = new prose_package();
@@ -133,6 +129,16 @@ public class new_armor extends script.base_script
                 pp = prose.setTT(pp, self);
                 sendSystemMessageProse(player, pp);
                 return SCRIPT_OVERRIDE;
+            }
+        }
+        //separated appearance equip from normal equip so we can allow appearance items to be equipped even if you can't wear it for stats.
+        else if (isAPlayerAppearanceInventoryContainer(destContainer))
+        {
+            obj_id player = destContainer;
+            if (isAPlayerAppearanceInventoryContainer(destContainer))
+            {
+                player = getContainedBy(destContainer);
+                return SCRIPT_CONTINUE;
             }
         }
         return SCRIPT_CONTINUE;

@@ -91,8 +91,16 @@ public class buff_click_item extends script.base_script
             String itemName = getStaticItemName(self);
             if (itemName == null || itemName.equals(""))
             {
-                CustomerServiceLog("buff", "buff_click_item object self: " + self + " Name: " + getName(self) + " had an invalid static item name. Buff object is bailing out early as a result.");
-                return SCRIPT_CONTINUE;
+                if (hasObjVar(self, "item_name"))
+                {
+
+                    itemName = getStringObjVar(self, "item_name");
+                }
+                else
+                {
+                    CustomerServiceLog("buff", "buff_click_item object self: " + self + " Name: " + getName(self) + " had an invalid static item name. Buff object is bailing out early as a result.");
+                    return SCRIPT_CONTINUE;
+                }
             }
             dictionary itemData = new dictionary();
             itemData = dataTableGetRow(static_item.ITEM_STAT_BALANCE_TABLE, itemName);

@@ -45,7 +45,7 @@ public class dynamic_armor extends script.base_script
             return SCRIPT_OVERRIDE;
         }
         boolean canTransfer = true;
-        if (isPlayer(destContainer) || isAPlayerAppearanceInventoryContainer(destContainer))
+        if (isPlayer(destContainer))
         {
             if (!isIdValid(transferer))
             {
@@ -86,6 +86,23 @@ public class dynamic_armor extends script.base_script
                 {
                     sendSystemMessage(transferer, SID_ITEM_NOT_ENOUGH_SKILL);
                     canTransfer = false;
+                }
+            }
+        }
+        //separated appearance equip from normal equip so we can allow appearance items to be equipped even if you can't wear it for stats.
+        if (isAPlayerAppearanceInventoryContainer(destContainer))
+        {
+            if (!isIdValid(transferer))
+            {
+                obj_id owner = getOwner(self);
+                if (destContainer == owner)
+                {
+                    transferer = owner;
+                }
+                else if (isAPlayerAppearanceInventoryContainer(destContainer))
+                {
+                    transferer = getContainedBy(destContainer);
+                    canTransfer = true;
                 }
             }
         }

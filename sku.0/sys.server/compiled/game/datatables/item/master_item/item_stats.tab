@@ -1148,7 +1148,6 @@ item_power_crystal_04_18			int:jedi.crystal.stats.min_dmg=18,int:jedi.crystal.st
 item_power_crystal_04_19			int:jedi.crystal.stats.min_dmg=19,int:jedi.crystal.stats.max_dmg=20,int:jedi.crystal.stats.quality=6,int:jedi.crystal.stats.level=-1	index_color_1=31							
 item_power_crystal_04_20			int:jedi.crystal.stats.min_dmg=20,int:jedi.crystal.stats.max_dmg=22,int:jedi.crystal.stats.quality=6,int:jedi.crystal.stats.level=-1	index_color_1=31							
 item_power_crystal_04_21			int:jedi.crystal.stats.min_dmg=23,int:jedi.crystal.stats.max_dmg=25,int:jedi.crystal.stats.quality=7,int:jedi.crystal.stats.level=-1	index_color_1=31							
-item_power_crystal_04_99			int:jedi.crystal.stats.min_dmg=100000,int:jedi.crystal.stats.max_dmg=100000,int:jedi.crystal.stats.quality=7,int:jedi.crystal.stats.level=-1	index_color_1=31							
 item_npe_dance_prop_l_entertainer_02_01			int:nocert=1								
 item_npe_dance_prop_r_entertainer_02_01			int:nocert=1								
 item_npe_necklace_protection_02_01	agility_modified=3										
@@ -4796,3 +4795,10 @@ item_ring_set_ent_01_01	strength_modified=30,agility_modified=30		int:item.set.s
 item_ring_set_trader_01_01	luck_modified=30,precision_modified=30,strength_modified=30		int:item.set.set_id=140001								
 rebel_trooper_hat_schematic			string:loot_schematic.schematic=object/draft_schematic/clothing/clothing_hat_rebel_trooper.iff,int:loot_schematic.uses=1,string:loot_schematic.skill_req=class_domestics_phase4_master								
 item_tauntaun_dna			string:beast.dna.creature_template=object/mobile/beast_master/bm_tauntaun.iff,float:beast.dna.quality=90.000000,int:beast.dna.cs_item=1								
+item_medic_constitution				index_color_0=0,index_color_1=37	me_buff_health_2	short_reuse_9	5			appearance/pt_heal_2.prt	
+item_medic_action				index_color_0=0,index_color_1=37	me_buff_action_3	short_reuse_9	5			clienteffect/medic_enhance_action.cef	
+item_medic_strength				index_color_0=0,index_color_1=37	me_buff_strength_3	short_reuse_9	5			appearance/pt_medic_enhance_strength.prt	
+item_medic_agility				index_color_0=0,index_color_1=37	me_buff_agility_3	short_reuse_9	5			clienteffect/medic_enhance_agility.cef	
+item_medic_precision				index_color_0=0,index_color_1=37	me_buff_precision_3	short_reuse_9	5			clienteffect/medic_enhance_precision.cef	
+item_medic_block				index_color_0=0,index_color_1=37	me_buff_melee_gb_1	short_reuse_9	5			clienteffect/medic_enhance_block.cef	
+item_medic_dodge				index_color_0=0,index_color_1=37	me_buff_ranged_gb_1	short_reuse_9	5			clienteffect/medic_enhance_dodge.cef	

@@ -37,7 +37,7 @@ public class static_item_base extends script.base_script
     public int OnAboutToBeTransferred(obj_id self, obj_id destContainer, obj_id transferer) throws InterruptedException
     {
         boolean canTransfer = true;
-        if (isPlayer(destContainer) || isAPlayerAppearanceInventoryContainer(destContainer))
+        if (isPlayer(destContainer))
         {
             dictionary itemData = static_item.getMasterItemDictionary(self);
             if (!isIdValid(transferer))
@@ -46,10 +46,6 @@ public class static_item_base extends script.base_script
                 if (destContainer == owner)
                 {
                     transferer = owner;
-                }
-                else if (isAPlayerAppearanceInventoryContainer(destContainer))
-                {
-                    transferer = getContainedBy(destContainer);
                 }
             }
             int requiredLevel = itemData.getInt("required_level");
@@ -80,6 +76,20 @@ public class static_item_base extends script.base_script
                     canTransfer = false;
                 }
             }
+        }
+        //separated appearance equip from normal equip so we can allow appearance items to be equipped even if you can't wear it for stats.
+        else if (isAPlayerAppearanceInventoryContainer(destContainer)) 
+        {
+            dictionary itemData = static_item.getMasterItemDictionary(self);
+            if (!isIdValid(transferer))
+            {
+                if (isAPlayerAppearanceInventoryContainer(destContainer))
+                {
+                    transferer = getContainedBy(destContainer);
+                    canTransfer = true;
+                }
+            }
+            canTransfer = true;
         }
         else 
         {

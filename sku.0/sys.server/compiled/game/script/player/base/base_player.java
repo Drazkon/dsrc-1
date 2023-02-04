@@ -285,6 +285,12 @@ public class base_player extends script.base_script
     public static final String LOGNAME = "junk_log";
     public int OnCustomizeFinished(obj_id self, obj_id object, String params) throws InterruptedException
     {
+        if (utils.hasScriptVar(self, "recolor_process.tool_oid"))
+        {
+            final obj_id objToColor = utils.getObjIdScriptVar(self, "recolor_process.tool_oid");
+            colorizeObject(self, objToColor, objToColor, params);
+            return SCRIPT_CONTINUE;
+        }
         if (utils.hasScriptVar(self, "armor_colorize.tool_oid") || utils.hasScriptVar(self, "structure_colorize.tool_oid"))
         {
             obj_id tool = obj_id.NULL_ID;
@@ -466,7 +472,8 @@ public class base_player extends script.base_script
                 }
             }
         }
-        utils.unequipAndNotifyUncerted(self);
+        //interferes with current appearance armor changes
+        //utils.unequipAndNotifyUncerted(self);
         if (strSkill.equals("outdoors_ranger_movement_03"))
         {
             if (hasSchematic(self, "object/draft_schematic/scout/item_camokit_kashyyyk.iff"))
@@ -641,7 +648,8 @@ public class base_player extends script.base_script
                 CustomerServiceLog("Wealth", "Extraordinary Wealth: " + getName(self) + " (" + self + ") logged in with " + totalMoney + " credits");
             }
         }
-        utils.unequipAndNotifyUncerted(self);
+        //interferes with my appearance changes
+        //utils.unequipAndNotifyUncerted(self);
         utils.checkInventoryForSnowflakeItemSwaps(self);
         if (hasObjVar(self, "item_reimbursement_list"))
         {
@@ -2845,14 +2853,21 @@ public class base_player extends script.base_script
         }
         pvpRemoveAllTempEnemyFlags(self);
         clearBuffIcon(self, "food");
+        //remove buff decay from PvP death and add to PvE death
         if (isPvpRelatedDeath(self))
         {
-            utils.setScriptVar(self, "buffDecay", 1);
-            buff.decayAllBuffsFromPvpDeath(self);
+            //utils.setScriptVar(self, "buffDecay", 1);
+            //buff.decayAllBuffsFromPvpDeath(self);
+
+            //set no cloning sickness for PvP death
+            utils.setScriptVar(self, "no_cloning_sickness", 1);
         }
         else 
         {
-            buff.removeAllBuffs(self, true);
+        
+            utils.setScriptVar(self, "buffDecay", 1);
+            buff.decayAllBuffsFromPvpDeath(self);
+            //buff.removeAllBuffs(self, true);
         }
         if (!hasObjVar(self, pclib.VAR_BEEN_COUPDEGRACED))
         {
@@ -3284,7 +3299,8 @@ public class base_player extends script.base_script
                 spawn = spawnLocs[idx];
                 location deathLoc = getLocation(self);
                 region[] respawnRegions = getRegionsWithPvPAtPoint(deathLoc, regions.PVP_REGION_TYPE_ADVANCED);
-                if ((respawnRegions != null && respawnRegions.length > 0) || utils.hasScriptVar(self, "battlefield.active"))
+                //add in pvp realted deaths
+                if ((respawnRegions != null && respawnRegions.length > 0) || utils.hasScriptVar(self, "battlefield.active") || isPvpRelatedDeath(self))
                 {
                     delayedClone = 15;
                     utils.setScriptVar(self, "no_cloning_sickness", 1);
@@ -3394,16 +3410,23 @@ public class base_player extends script.base_script
             healing.healClone(self, true);
         }
         setPosture(self, POSTURE_UPRIGHT);
-        utils.removeScriptVar(self, "pvp_death");
         queueCommand(self, (-1465754503), self, "", COMMAND_PRIORITY_IMMEDIATE);
         playClientEffectObj(self, "clienteffect/player_clone_compile.cef", self, null);
         if (!utils.hasScriptVar(self, "no_cloning_sickness") && !instance.isInInstanceArea(self))
         {
-            buff.applyBuff(self, "cloning_sickness");
+            //only add cloning sickness if it is a pve death
+            if (!isPvpRelatedDeath(self))
+            {
+                buff.applyBuff(self, "cloning_sickness");
+            }
         }
         else if (utils.hasScriptVar(self, "no_cloning_sickness"))
         {
-            utils.removeScriptVar(self, "no_cloning_sickness");
+            //only remove script if it is a pve death
+            if (!isPvpRelatedDeath(self))
+            {
+                utils.removeScriptVar(self, "no_cloning_sickness");
+            }
         }
         if (0 == pvpGetAlignedFaction(self))
         {
@@ -3414,6 +3437,9 @@ public class base_player extends script.base_script
             }
         }
         CustomerServiceLog("Death", "(" + self + ") " + getName(self) + " has clone respawned at " + (getLocation(self)).toString());
+        //remove scripts after cloning processes
+        utils.removeScriptVar(self, "pvp_death");
+        utils.removeScriptVar(self, "no_cloning_sickness");
         return SCRIPT_CONTINUE;
     }
     public int handlePlayerResuscitated(obj_id self, dictionary params) throws InterruptedException
@@ -8748,25 +8774,21 @@ public class base_player extends script.base_script
         int idx = -1;
         if (gender == GENDER_MALE)
         {
-            /*if (species == SPECIES_HUMAN || species == SPECIES_ZABRAK || species == SPECIES_BOTHAN || species == SPECIES_MON_CALAMARI || species == SPECIES_RODIAN || species == SPECIES_TWILEK || species == SPECIES_ABYSSIN || species == SPECIES_AQUALISH || species == SPECIES_ARCONA || species == SPECIES_BITH || species == SPECIES_CEREAN || species == SPECIES_CHISS || species == SPECIES_DEVARONIAN || species == SPECIES_DUROS || species == SPECIES_GORAX || species == SPECIES_GOTAL || species == SPECIES_GRAN || species == SPECIES_HUTT || species == SPECIES_IKTOTCHI || species == SPECIES_ISHI_TIB || species == SPECIES_JENET || species == SPECIES_KADASSA || species == SPECIES_KEL_DOR || species == SPECIES_KLATOOINIAN || species == SPECIES_KUBAZ || species == SPECIES_MARAUDER || species == SPECIES_NAUTOLAN || species == SPECIES_NIKTO || species == SPECIES_QUARREN  || species == SPECIES_TALZ || species == SPECIES_WEEQUAY)
+            if (species == SPECIES_HUMAN || species == SPECIES_ZABRAK || species == SPECIES_BOTHAN || species == SPECIES_MON_CALAMARI || species == SPECIES_RODIAN || species == SPECIES_TWILEK)
             {
                 idx = 0;
-            }*/
+            }
             if (species == SPECIES_TRANDOSHAN)
             {
                 idx = 3;
             }
-            else
-            {
-                idx = 0;
-            }
         }
         else 
         {
-            /*if (species == SPECIES_HUMAN || species == SPECIES_ZABRAK || species == SPECIES_BOTHAN || species == SPECIES_RODIAN || species == SPECIES_TWILEK || species == SPECIES_AQUALISH || species == SPECIES_BITH || species == SPECIES_CHISS || species == SPECIES_HUTT || species == SPECIES_MARAUDER || species == SPECIES_NIGHTSISTER || species == SPECIES_SMC || species == SPECIES_TOGRUTA)
+            if (species == SPECIES_HUMAN || species == SPECIES_ZABRAK || species == SPECIES_BOTHAN || species == SPECIES_RODIAN || species == SPECIES_TWILEK)
             {
                 idx = 1;
-            }*/
+            }
             if (species == SPECIES_MON_CALAMARI)
             {
                 idx = 2;
@@ -8774,10 +8796,6 @@ public class base_player extends script.base_script
             if (species == SPECIES_TRANDOSHAN)
             {
                 idx = 4;
-            }
-            else
-            {
-               idx = 1; 
             }
         }
         if (idx >= 0)
@@ -12043,13 +12061,11 @@ public class base_player extends script.base_script
         {
             return false;
         }
+        dictionary d = new dictionary();
+        d.put("player", self);
         if (params == null || params.equals(""))
         {
-            return false;
-        }
-        if (params == null || params.equals(""))
-        {
-            messageTo(tool, "cancelTool", null, 0, false);
+            messageTo(tool, "cancelTool", d, 0, false);
             return false;
         }
         String[] colorArray = split(params, ' ');
@@ -12065,7 +12081,7 @@ public class base_player extends script.base_script
             }
             hue.setColor(object, colorArray[i], utils.stringToInt(colorArray[i + 1]));
         }
-        messageTo(tool, "decrementTool", null, 0, false);
+        messageTo(tool, "decrementTool", d, 0, false);
         return true;
     }
     public boolean isPvpRelatedDeath(obj_id player) throws InterruptedException

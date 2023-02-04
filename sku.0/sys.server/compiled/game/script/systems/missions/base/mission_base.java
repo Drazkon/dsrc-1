@@ -15,7 +15,7 @@ public class mission_base extends script.base_script
     public static final String MISSION_INCOMPLETE_PERSISTENT_MESSAGE = "incomplete";
     public static final String MISSION_TIMED_OUT_PERSISTENT_MESSAGE = "timed_out";
     public static final String GENERIC_MISSION_MESSAGE_STRING_FILE = "mission/mission_generic";
-    public static final int MAX_MISSIONS = 2;
+    public static final int MAX_MISSIONS = 4;
     public static final String BOUNTY_MISSION_LISTENERS = "mission.objBountyListeners";
     public static final int BOUNTY_DIFFICULTY_BASIC = 1;
     public static final int BOUNTY_DIFFICULTY_ADVANCED = 2;
@@ -145,7 +145,7 @@ public class mission_base extends script.base_script
             obj_id objHq = getObjIdObjVar(objMission, "hq");
             if (isIdValid(objHq))
             {
-                int hqReward = Math.round(intReward / 20.0f);
+                int hqReward = Math.round(intReward / 10.0f);
                 transferBankCreditsFromNamedAccount(money.ACCT_MISSION_DYNAMIC, objHq, hqReward, "noHandler", "noHandler", new dictionary());
             }
         }
@@ -207,7 +207,7 @@ public class mission_base extends script.base_script
             int intGCWPoints = getIntObjVar(objMissionData, "intGCWPoints");
             if (hasObjVar(objMission, "hq"))
             {
-                intFactionReward = Math.round(intFactionReward * 1.05f);
+                intFactionReward = Math.round(intFactionReward * 1.75f);
             }
             if (!boolGroup)
             {

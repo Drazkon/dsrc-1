@@ -24,8 +24,8 @@ public class missions extends script.base_script
     public static final int BH_STAT_MAX = 4;
     public static final int BOUNTY_FLAG_NONE = 0;
     public static final int BOUNTY_FLAG_SMUGGLER = 1;
-    public static final int DAILY_MISSION_XP_REWARD_DEFAULT = 10;
-    public static final int DAILY_MISSION_CASH_REWARD = 15;
+    public static final int DAILY_MISSION_XP_REWARD_DEFAULT = 20;
+    public static final int DAILY_MISSION_CASH_REWARD = 20;
     public static final int DAILY_MISSION_XP_SANITY = 5;
     public static final int DAILY_MISSION_XP_LOW = 9;
     public static final int DAILY_MISSION_XP_MEDIUM = 14;
