@@ -8774,21 +8774,27 @@ public class base_player extends script.base_script
         int idx = -1;
         if (gender == GENDER_MALE)
         {
-            if (species == SPECIES_HUMAN || species == SPECIES_ZABRAK || species == SPECIES_BOTHAN || species == SPECIES_MON_CALAMARI || species == SPECIES_RODIAN || species == SPECIES_TWILEK)
+            /*if (species == SPECIES_HUMAN || species == SPECIES_ZABRAK || species == SPECIES_BOTHAN || species == SPECIES_MON_CALAMARI || species == SPECIES_RODIAN || species == SPECIES_TWILEK)
             {
                 idx = 0;
-            }
+            }*/
             if (species == SPECIES_TRANDOSHAN)
             {
                 idx = 3;
             }
+            else
+
+            {
+                idx = 0;
+            }
+
         }
         else 
         {
-            if (species == SPECIES_HUMAN || species == SPECIES_ZABRAK || species == SPECIES_BOTHAN || species == SPECIES_RODIAN || species == SPECIES_TWILEK)
+            /*if (species == SPECIES_HUMAN || species == SPECIES_ZABRAK || species == SPECIES_BOTHAN || species == SPECIES_RODIAN || species == SPECIES_TWILEK)
             {
                 idx = 1;
-            }
+            }*/
             if (species == SPECIES_MON_CALAMARI)
             {
                 idx = 2;
@@ -8796,6 +8802,11 @@ public class base_player extends script.base_script
             if (species == SPECIES_TRANDOSHAN)
             {
                 idx = 4;
+            }
+            else
+
+            {
+               idx = 1; 
             }
         }
         if (idx >= 0)
