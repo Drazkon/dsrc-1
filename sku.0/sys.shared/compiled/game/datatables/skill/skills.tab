@@ -2423,8 +2423,6 @@ expertise_trader_harvester_energy_1	expertise_trader_harvester_maintenance_4				
 expertise_trader_harvester_energy_2	expertise_trader_harvester_energy_1																					expertise_harvester_energy_decrease=5				
 expertise_trader_harvester_energy_3	expertise_trader_harvester_energy_2																					expertise_harvester_energy_decrease=5				
 expertise_trader_harvester_energy_4	expertise_trader_harvester_energy_3																					expertise_harvester_energy_decrease=5				
-expertise_trader_reverse_engineering_1	expertise																					expertise_reverse_engineering_bonus=5				
-expertise_trader_reverse_engineering_2	expertise_trader_reverse_engineering_1																					expertise_reverse_engineering_bonus=5				
 expertise_trader_factory_production_1	expertise_trader_factory_energy_4									expertise_trader_factory_energy_4												factory_speed=5				
 expertise_trader_factory_production_2	expertise_trader_factory_production_1																					factory_speed=5				
 expertise_trader_harvester_collection_1	expertise_trader_harvester_energy_4									expertise_trader_harvester_energy_4												expertise_harvester_collection_increase=20				

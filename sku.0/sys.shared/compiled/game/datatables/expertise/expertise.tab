@@ -842,8 +842,6 @@ expertise_trader_harvester_energy_1	29	4	5	1			trader
 expertise_trader_harvester_energy_2	29	4	5	2			trader
 expertise_trader_harvester_energy_3	29	4	5	3			trader
 expertise_trader_harvester_energy_4	29	4	5	4			trader
-expertise_trader_reverse_engineering_1	29	4	7	1			trader
-expertise_trader_reverse_engineering_2	29	4	7	2			trader
 expertise_trader_factory_production_1	29	5	3	1			trader
 expertise_trader_factory_production_2	29	5	3	2			trader
 expertise_trader_harvester_collection_1	29	5	5	1			trader
