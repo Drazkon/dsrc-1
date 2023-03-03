@@ -1,0 +1,25 @@
+@base object/draft_schematic/base/base_draft_schematic.iff
+
+@class draft_schematic_object_template 2
+
+category = CT_misc
+itemsPerContainer = 25
+craftedObjectTemplate = "object/tangible/component/reverse_engineering/rifle_acr_modifier_bit.iff"
+slots = [
+	[
+	optional = false,
+	name = "craft_item_ingredients_n" "bit_core",
+	options = [
+		[ingredientType=IT_resourceClass, ingredients = [[name="craft_item_ingredients_n" "bit_core", ingredient="metal", count=8]], complexity = 0, skillCommand = "unskilled"]],
+	optionalSkillCommand = "",
+	complexity = 0]]
+skillCommands = ["unskilled"]
+manufactureScripts = [ "systems.crafting.item.specific_item.reverse_engineering_modifier_bits" ]
+
+@class intangible_object_template 0
+
+@class object_template 5
+
+complexity = 4
+sharedTemplate = "object/draft_schematic/reverse_engineering/modifier_bits/shared_rifle_acr_modifier_bit.iff"
+volume = 1

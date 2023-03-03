@@ -2768,3 +2768,37 @@ class_chronicles_14	class_chronicles_13		0	0	0	0	0	0		class_chronicles_13		chron
 class_chronicles_15	class_chronicles_14		0	0	0	0	0	0		class_chronicles_14		chronicles	1095000	1680000								chronicles_max_tasks=1			1	0
 class_chronicles_16	class_chronicles_15		0	0	0	0	0	0		class_chronicles_15		chronicles	1225000	1860000								chronicles_max_quest_shared=5			1	0
 class_chronicles_master	class_chronicles_16		0	1	0	0	0	0		class_chronicles_16		chronicles	1365000	1365000							chroniclerVentriloquism	chronicles_relic_quality=1,chronicles_max_tasks=1,chronicles_relic_mastery=1			1	0
+reverse_engineer	expertise		0	0	1	0	0	0																	1	0
+crafting_reverse_engineer_novice	reverse_engineer		0	1	0	0		6														expertise_reverse_engineering_bonus=5,expertise_attachment_upgrade=1			1	0
+crafting_reverse_engineer_novice_2	crafting_reverse_engineer_novice									crafting_reverse_engineer_novice												expertise_reverse_engineering_bonus=5				
+crafting_reverse_engineer_novice_3	crafting_reverse_engineer_novice_2									crafting_reverse_engineer_novice_2												expertise_reverse_engineering_bonus=5				
+crafting_reverse_engineer_novice_4	crafting_reverse_engineer_novice_3									crafting_reverse_engineer_novice_3												expertise_reverse_engineering_bonus=5				
+expertise_trader_reverse_engineering_1	expertise									crafting_reverse_engineer_novice_4												expertise_reverse_engineering_bonus=5				
+expertise_trader_reverse_engineering_2	expertise_trader_reverse_engineering_1									expertise_trader_reverse_engineering_1												expertise_reverse_engineering_bonus=5				
+expertise_trader_reverse_engineering_3	expertise_trader_reverse_engineering_2									expertise_trader_reverse_engineering_2												expertise_reverse_engineering_bonus=5				
+expertise_trader_reverse_engineering_4	expertise_trader_reverse_engineering_3									expertise_trader_reverse_engineering_3												expertise_reverse_engineering_bonus=5				
+expertise_trader_advanced_reverse_engineering_1	expertise									expertise_trader_reverse_engineering_4												expertise_reverse_engineering_bonus=10				
+expertise_trader_advanced_reverse_engineering_2	expertise_trader_advanced_reverse_engineering_1									expertise_trader_advanced_reverse_engineering_1												expertise_reverse_engineering_bonus=10				
+expertise_trader_advanced_reverse_engineering_3	expertise_trader_advanced_reverse_engineering_2									expertise_trader_advanced_reverse_engineering_2												expertise_reverse_engineering_bonus=10				
+expertise_trader_advanced_reverse_engineering_4	expertise_trader_advanced_reverse_engineering_3									expertise_trader_advanced_reverse_engineering_3												expertise_reverse_engineering_bonus=10				
+expertise_trader_expert_reverse_engineering_1	expertise									expertise_trader_advanced_reverse_engineering_4,crafting_reverse_engineer_master												expertise_reverse_engineering_bonus=10				
+expertise_trader_expert_reverse_engineering_2	expertise_trader_expert_reverse_engineering_1									expertise_trader_expert_reverse_engineering_1												expertise_reverse_engineering_bonus=10				
+expertise_trader_expert_reverse_engineering_3	expertise_trader_expert_reverse_engineering_2									expertise_trader_expert_reverse_engineering_2												expertise_reverse_engineering_bonus=10				
+expertise_trader_expert_reverse_engineering_4	expertise_trader_expert_reverse_engineering_3									expertise_trader_expert_reverse_engineering_3												expertise_reverse_engineering_bonus=10				
+expertise_reverse_engineer_general_luck_1	crafting_reverse_engineer_novice_4									crafting_reverse_engineer_novice_4												luck_modified=25			0	
+expertise_reverse_engineer_general_luck_2	expertise_reverse_engineer_general_luck_1									expertise_reverse_engineer_general_luck_1												luck_modified=25			0	
+expertise_reverse_engineer_general_luck_3	expertise_reverse_engineer_general_luck_2									expertise_reverse_engineer_general_luck_2												luck_modified=25			0	
+expertise_reverse_engineer_general_luck_4	expertise_reverse_engineer_general_luck_3									expertise_reverse_engineer_general_luck_3												luck_modified=25			0	
+expertise_reverse_engineer_general_enhanced_luck_1	expertise									expertise_reverse_engineer_general_luck_4												luck_modified=50			0	
+expertise_reverse_engineer_general_enhanced_luck_2	expertise_reverse_engineer_general_enhanced_luck_1									expertise_reverse_engineer_general_enhanced_luck_1												luck_modified=50			0	
+expertise_reverse_engineer_general_enhanced_luck_3	expertise_reverse_engineer_general_enhanced_luck_2									expertise_reverse_engineer_general_enhanced_luck_2												luck_modified=50			0	
+expertise_reverse_engineer_general_enhanced_luck_4	expertise_reverse_engineer_general_enhanced_luck_3									expertise_reverse_engineer_general_enhanced_luck_3												luck_modified=50			0	
+expertise_reverse_engineer_general_expert_luck_1	expertise									expertise_reverse_engineer_general_enhanced_luck_4,crafting_reverse_engineer_master												luck_modified=100			0	
+expertise_reverse_engineer_general_expert_luck_2	expertise_reverse_engineer_general_expert_luck_1									expertise_reverse_engineer_general_expert_luck_1												luck_modified=100			0	
+expertise_reverse_engineer_general_expert_luck_3	expertise_reverse_engineer_general_expert_luck_2									expertise_reverse_engineer_general_expert_luck_2												luck_modified=100			0	
+expertise_reverse_engineer_general_expert_luck_4	expertise_reverse_engineer_general_expert_luck_3									expertise_reverse_engineer_general_expert_luck_3												luck_modified=100			0	
+expertise_reverse_engineer_schema	expertise																						craftModBitsGroupA			
+expertise_reverse_engineer_schemb	expertise																						craftModBitsGroupB			
+expertise_reverse_engineer_schemc	expertise																						craftModBitsGroupC			
+expertise_reverse_engineer_schemd	expertise																						craftModBitsGroupD			
+crafting_reverse_engineer_master	reverse_engineer		0	1	0	0	10000	1														expertise_reverse_engineering_bonus=40			1	0
