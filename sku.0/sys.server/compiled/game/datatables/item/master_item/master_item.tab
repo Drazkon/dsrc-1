@@ -8588,3 +8588,4 @@ mustafar_volcano	object/tangible/item/instance_deed.iff						1	2		item.special.f
 sher_kar_cave	object/tangible/item/instance_deed.iff						1	2		item.special.flag_instance			Scroll of Knowledge (Sher Kar Cave)		
 heroic_gift	object/tangible/item/heroic_gift.iff						1	2		item.special.heroic_gift					
 jewelry_gift	object/tangible/item/jewelry_gift.iff						1	2							
+item_species_token_01	object/tangible/loot/generic_usable/impulse_detector_01_generic.iff						1	2		systems.species_change.click_species_token		1	Species Change Device	Using this device will allow you to change your species.	
